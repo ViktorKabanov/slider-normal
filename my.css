@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-wrapper {
+    width: 400px;
+    aspect-ratio: 1250 / 833;
+    outline: 2px solid green;
+    outline-offset: 2px;
+    margin: 50px auto;
+    /* overflow: hidden; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slider-line {
+    outline: 2px solid red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    outline: 2px solid blue;
+    outline-offset: -2px;
+    flex-shrink: 0;
+    /* баг возникает при быстрых кликах, выделяется первое изображение */
+    user-select: none;
+}
+
+.btn-slider {
+    position: absolute;
+    color: red;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+    transform: translateX(-110%);
+}
+
+.next {
+    right: 0;
+    transform: translateX(110%);
+}
+
+.btn-pagination {
+    width: 40%;
+    height: 10%;
+    position: absolute;
+    align-self: flex-end;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.btn-pagination button{
+    display: block;
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    background-color: #fff;
+}
