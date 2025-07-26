@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./my.css">
+    <title>slider</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <section>
+            <div class="slider-wrapper">
+                <!-- slider-block нужен чтобы кнопки не исчезали если они снаружи slider -->
+                <div class="slider-block">
+                    <button class="btn-prev">prev</button>
+                    <div class="slider">
+                        <div class="slider-line">
+                            <!-- в type пиши jpeg а не jpg -->
+                            <picture>
+                                <source srcset="./img/p1-1250.jpg" media="(min-width: 1250px)" type="image/jpeg">
+                                <source srcset="./img/p1-1000.jpg" media="(min-width: 992px)" type="image/jpeg">
+                                <source srcset="./img/p1-750.jpg" media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./img/p1-550.jpg" media="(min-width: 576px)" type="image/jpeg">
+                                <source srcset="./img/p1-400.jpg" media="(min-width: 360px)" type="image/jpeg">
+                                <source srcset="./img/p1-400.jpg" type="image/jpeg">
+                                <img src="./img/p1-1250.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="./img/p2-1250.jpg" media="(min-width: 1250px)" type="image/jpeg">
+                                <source srcset="./img/p2-1000.jpg" media="(min-width: 992px)" type="image/jpeg">
+                                <source srcset="./img/p2-750.jpg" media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./img/p2-550.jpg" media="(min-width: 576px)" type="image/jpeg">
+                                <source srcset="./img/p2-400.jpg" media="(min-width: 360px)" type="image/jpeg">
+                                <source srcset="./img/p1-400.jpg" type="image/jpeg">
+                                <img src="./img/p2-1250.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="./img/p3-1250.jpg" media="(min-width: 1250px)" type="image/jpeg">
+                                <source srcset="./img/p3-1000.jpg" media="(min-width: 992px)" type="image/jpeg">
+                                <source srcset="./img/p3-750.jpg" media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./img/p3-550.jpg" media="(min-width: 576px)" type="image/jpeg">
+                                <source srcset="./img/p3-400.jpg" media="(min-width: 360px)" type="image/jpeg">
+                                <source srcset="./img/p1-400.jpg" type="image/jpeg">
+                                <img src="./img/p3-1250.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="./img/p4-1250.jpg" media="(min-width: 1250px)" type="image/jpeg">
+                                <source srcset="./img/p4-1000.jpg" media="(min-width: 992px)" type="image/jpeg">
+                                <source srcset="./img/p4-750.jpg" media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./img/p4-550.jpg" media="(min-width: 576px)" type="image/jpeg">
+                                <source srcset="./img/p4-400.jpg" media="(min-width: 360px)" type="image/jpeg">
+                                <source srcset="./img/p1-400.jpg" type="image/jpeg">
+                                <img src="./img/p4-1250.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="./img/p5-1250.jpg" media="(min-width: 1250px)" type="image/jpeg">
+                                <source srcset="./img/p5-1000.jpg" media="(min-width: 992px)" type="image/jpeg">
+                                <source srcset="./img/p5-750.jpg" media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./img/p5-550.jpg" media="(min-width: 576px)" type="image/jpeg">
+                                <source srcset="./img/p5-400.jpg" media="(min-width: 360px)" type="image/jpeg">
+                                <source srcset="./img/p1-400.jpg" type="image/jpeg">
+                                <img src="./img/p5-1250.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="./img/p6-1250.jpg" media="(min-width: 1250px)" type="image/jpeg">
+                                <source srcset="./img/p6-1000.jpg" media="(min-width: 992px)" type="image/jpeg">
+                                <source srcset="./img/p6-750.jpg" media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./img/p6-550.jpg" media="(min-width: 576px)" type="image/jpeg">
+                                <source srcset="./img/p6-400.jpg" media="(min-width: 360px)" type="image/jpeg">
+                                <source srcset="./img/p1-400.jpg" type="image/jpeg">
+                                <img src="./img/p6-1250.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="./img/p7-1250.jpg" media="(min-width: 1250px)" type="image/jpeg">
+                                <source srcset="./img/p7-1000.jpg" media="(min-width: 992px)" type="image/jpeg">
+                                <source srcset="./img/p7-750.jpg" media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./img/p7-550.jpg" media="(min-width: 576px)" type="image/jpeg">
+                                <source srcset="./img/p7-400.jpg" media="(min-width: 360px)" type="image/jpeg">
+                                <source srcset="./img/p1-400.jpg" type="image/jpeg">
+                                <img src="./img/p7-1250.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <button class="btn-next">next</button>
+                </div>
+                <div class="btn-pagination">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
